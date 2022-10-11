@@ -1,4 +1,4 @@
-<p align="center"><a href="https://localhost:8000" target="_blank"><img src="public/backend/dist/img/school.png" width="400" alt="SIMS Logo"></a></p>
+<p align="center"><a href="https://localhost:8000" target="_blank"><img src="public/backend/dist/img/school.png" height="200" width="200" alt="SIMS Logo"></a></p>
 
 <!-- <p align="center">
 <a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
