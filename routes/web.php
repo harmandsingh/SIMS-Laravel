@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\Backend\StudentController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('auth.login');
 });
 
 Route::middleware([
@@ -26,3 +28,12 @@ Route::middleware([
         return view('admin.index');
     })->name('dashboard');
 });
+
+Route::get('/admin/logout', [AdminController::class, 'logout'])->name('admin.logout');
+
+//Route for all the student management links
+Route::prefix('students')->group(function(){
+    Route::get('/view', [StudentController::class, 'studentView'])->name('student.view');
+});
+
+
