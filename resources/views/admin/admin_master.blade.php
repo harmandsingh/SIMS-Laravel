@@ -27,6 +27,10 @@
   <link rel="stylesheet" href="{{ asset('backend/plugins/daterangepicker/daterangepicker.css') }}">
   <!-- summernote -->
   <link rel="stylesheet" href="{{ asset('backend/plugins/summernote/summernote-bs4.min.css') }}">
+  <!-- SweetAlert2 -->
+  <link rel="stylesheet" href="{{ asset('backend/plugins/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css') }}">
+  <!-- Toastr -->
+  <link rel="stylesheet" href="{{ asset('backend/plugins/toastr/toastr.min.css') }}">
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Figtree:300,400,400i,700&display=fallback" rel="stylesheet">
@@ -125,5 +129,6 @@
 <!-- <script src="{{ asset('backend/dist/js/demo.js') }}"></script> -->
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
 <!-- <script src="{{ asset('backend/dist/js/pages/dashboard.js') }}"></script> -->
+<script src="{{asset('backend/plugins/sweetalert2/sweetalert2.all.min.js')}}"></script>
 </body>
 </html>

@@ -44,7 +44,7 @@
               <li class="nav-item">
                 <a href="pages/mailbox/mailbox.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p style="font-weight: 200">Gradebooks</p>
+                  <p style="font-weight: 200">Student Classes</p>
                 </a>
               </li>
               <li class="nav-item">
@@ -63,17 +63,17 @@
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-user"></i>
+              <i class="nav-icon fas fa-database"></i>
               <p style="font-weight: 300">
-                Administration
+                DB Management
                 <i class="fas fa-angle-left right"></i>
               </p>
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="{{ route('student.view') }}" class="nav-link">
+                <a href="{{ route('class.view') }}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p style="font-weight: 200">Student Manager</p>
+                  <p style="font-weight: 200; font-size:90%">Student Class</p>
                 </a>
               </li>
               <li class="nav-item">

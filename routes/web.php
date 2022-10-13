@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
-use App\Http\Controllers\Backend\StudentController;
+use App\Http\Controllers\Backend\SchoolSetup\ManagementController;
 
 /*
 |--------------------------------------------------------------------------
@@ -31,9 +31,13 @@ Route::middleware([
 
 Route::get('/admin/logout', [AdminController::class, 'logout'])->name('admin.logout');
 
-//Route for all the student management links
-Route::prefix('students')->group(function(){
-    Route::get('/view', [StudentController::class, 'studentView'])->name('student.view');
+//Route for all the database management functions
+Route::prefix('manage')->group(function(){
+    Route::get('/class/view', [ManagementController::class, 'viewClass'])->name('class.view');
+    Route::get('/class/add', [ManagementController::class, 'addClass'])->name('class.add');
+    Route::post('/class/store', [ManagementController::class, 'storeClass'])->name('class.store');
+    Route::get('/class/edit/{id}', [ManagementController::class, 'editClass'])->name('class.edit');
+    Route::post('/class/update/{id}', [ManagementController::class, 'updateClass'])->name('class.update');
 });
 
 
